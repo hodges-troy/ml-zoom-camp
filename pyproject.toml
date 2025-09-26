@@ -12,6 +12,8 @@ dependencies = [
     "numpy",
     "matplotlib",
     "seaborn",
+    "jupyter",
+    "ipykernel",
 ]
 
 [project.optional-dependencies]
