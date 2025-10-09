@@ -11,3 +11,8 @@ if __name__ == "__main__":
     eff = pd.read_csv("week_one/car_fuel_efficiency.csv")
     na_cols = eff.columns[eff.isna().sum() > 0]
     logger.info(f"Cols with nulls: {na_cols}")
+
+    # Question 2: Median horsepower
+    hp_med = eff['horsepower'].median()
+
+    logger.info(f"Median horsepower: {hp_med}")
